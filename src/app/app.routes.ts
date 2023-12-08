@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { SuggestionsPageComponent } from './suggestions/suggestions-page/suggestions-page.component';
+import { SuggestionsPageComponent } from '@app/activities';
 
 export const routes: Routes = [
   {
