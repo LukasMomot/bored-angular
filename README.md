@@ -34,5 +34,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - Router with `@Ìnput()` params
 - Required Inputs
 - Self closing tags
-
+- takeUntilDestroyed(this.destroyRef) => new way to unsubscribe
 - ~ `differ`
