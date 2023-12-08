@@ -8,3 +8,9 @@ button {
   width: 100px;
   height: 50px;
 }
+
+button:hover {
+  background-color: gold;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
