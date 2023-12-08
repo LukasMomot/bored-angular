@@ -28,6 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## 🚀 Concepts used 🚀
 - Standalone componets + folder structure
+- New Control flow syntac `@if()` `@for()`
 - Signals
 - New `inject()` function for DI
 - Router with `@Ìnput()` params
