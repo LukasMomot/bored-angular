@@ -1,1 +1,4 @@
-<p>suggestions-list works!</p>,
+<button (click)="loadActivities()" >Load new 🚀</button>
+@for (activity of activities(); track $index) {
+  <app-activity-card [activity]="activity"></app-activity-card>
+}

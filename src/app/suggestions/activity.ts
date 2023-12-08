@@ -1,4 +1,4 @@
-type Activity = {
+export type Activity = {
   activity: string;
   type: string;
   participants: number;
@@ -6,4 +6,5 @@ type Activity = {
   link: string;
   key?: string;
   accessibility: number;
+  favorite?: boolean;
 };
