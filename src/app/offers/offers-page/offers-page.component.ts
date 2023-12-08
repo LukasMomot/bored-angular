@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-offers-page',
@@ -11,4 +11,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './offers-page.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class OffersPageComponent { }
+export class OffersPageComponent {
+  @Input() key?: string;
+}

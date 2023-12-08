@@ -31,6 +31,7 @@ export class SuggestionsListComponent {
         link: 'https://angular.io/',
         accessibility: 0,
         favorite: true,
+        key: '1',
       },
       {
         activity: 'Whisky tasting',
@@ -39,6 +40,7 @@ export class SuggestionsListComponent {
         price: 0.5,
         link: 'https://www.whisky.com/',
         accessibility: 0.1,
+        key: '2',
       }
     ]);
 

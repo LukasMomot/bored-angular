@@ -13,7 +13,7 @@ export const routes: Routes = [
     component: SuggestionsPageComponent,
   },
   {
-    path: 'offers',
+    path: 'offers/:key',
     component: OffersPageComponent
   }
 ];
