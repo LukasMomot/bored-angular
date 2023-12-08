@@ -2,5 +2,5 @@
 <p>We have selected for you: {{ activityCount() }} activities 🥳</p>
 
 @for (activity of activities(); track $index) {
-  <app-activity-card [activity]="activity"></app-activity-card>
+  <app-activity-card [activity]="activity" />
 }

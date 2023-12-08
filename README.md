@@ -33,3 +33,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - New `inject()` function for DI
 - Router with `@Ìnput()` params
 - Required Inputs
+- Self closing tags
+
+- ~ `differ`
