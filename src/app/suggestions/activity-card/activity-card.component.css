@@ -10,9 +10,24 @@
   min-height: 50px;
   min-width: 400px;
   border: 2px dashed grey;
+  padding: 10px;
 }
 
 .card-container:hover {
   border: 2px dashed gold;
   transition: border 0.3s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: gold;
+  transition: color 0.3s ease-in-out;
+}
+
+p {
+  font-weight: bold;
 }
