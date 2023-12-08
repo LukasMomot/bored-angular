@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { SuggestionsPageComponent } from '@app/activities';
+import { ActivitesPageComponent } from './activities';
 import { OffersPageComponent } from '@app/offers';
 
 export const routes: Routes = [
@@ -10,7 +10,7 @@ export const routes: Routes = [
   },
   {
     path: 'suggestions',
-    component: SuggestionsPageComponent,
+    component: ActivitesPageComponent,
   },
   {
     path: 'offers/:key',

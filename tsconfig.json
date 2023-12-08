@@ -23,7 +23,7 @@
       "dom"
     ],
     "paths": {
-      "@app/activities": ["./src/app/suggestions/index"],
+      "@app/activities": ["./src/app/activities/index"],
       "@app/offers": ["./src/app/offers/index"],
     }
   },

@@ -6,10 +6,10 @@ import { ActivityService } from '../activity.service';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 @Component({
-    selector: 'app-suggestions-list',
+    selector: 'app-activities-list',
     standalone: true,
-    templateUrl: './suggestions-list.component.html',
-    styleUrl: './suggestions-list.component.css',
+    templateUrl: './activities-list.component.html',
+    styleUrl: './activities-list.component.css',
     changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [
         CommonModule,
@@ -17,7 +17,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
     ]
 })
 
-export class SuggestionsListComponent {
+export class ActivitiesListComponent {
   activityService = inject(ActivityService);
   private destroyRef = inject(DestroyRef);
 
