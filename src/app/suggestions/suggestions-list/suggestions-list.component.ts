@@ -43,9 +43,10 @@ export class SuggestionsListComponent {
     ]);
 
   loadActivities() {
-    this.activityService.getRandomActivity().pipe(takeUntilDestroyed(this.destroyRef))
-      .subscribe(activity => {
-        this.activities.set([activity]);
+    this.activityService.getRandomActivities(3).pipe(takeUntilDestroyed(this.destroyRef))
+      .subscribe(activities => {
+        activities[0].favorite = true;
+        this.activities.set(activities);
     });
   }
  }
