@@ -1,6 +1,11 @@
 <div class="card-container">
   @if (activity.favorite) {
-    <span>⭐️⭐️⭐️</span>
+    <span #fovorite>⭐️⭐️⭐️</span>
+
+    <!-- Just for testing -->
+    @defer (on hover(fovorite)) {
+      <span>This is the best offer for you 😎</span>
+    }
   }
 
   <p>{{ activity.activity }}</p>
