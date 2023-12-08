@@ -1,4 +1,5 @@
 <button (click)="loadActivities()" >Load new 🚀</button>
+<p>We have selected for you: {{ activityCount() }} activities 🥳</p>
 @for (activity of activities(); track $index) {
   <app-activity-card [activity]="activity"></app-activity-card>
 }
