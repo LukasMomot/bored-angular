@@ -1,5 +1,5 @@
 <div class="card-container">
-  @if (activity.favorite) {
+  @if (activity().favorite) {
     <span #fovorite>⭐️⭐️⭐️</span>
 
     @defer (on hover(fovorite)) {
@@ -7,6 +7,6 @@
     }
   }
 
-  <p>{{ activity.activity }}</p>
-  <a [routerLink]="['/offers', activity.key]">Check offers 👉</a>
+  <p>{{ activity().activity }}</p>
+  <a [routerLink]="['/offers', activity().key]">Check offers 👉</a>
 </div>

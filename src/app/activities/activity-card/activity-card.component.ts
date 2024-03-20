@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, input } from '@angular/core';
 import { Activity } from '../activity';
 import { RouterLink } from '@angular/router';
 import { SupriseTextComponent } from "../suprise-text/suprise-text.component";
@@ -17,5 +17,5 @@ import { SupriseTextComponent } from "../suprise-text/suprise-text.component";
     ]
 })
 export class ActivityCardComponent {
-  @Input( { required: true }) activity: Activity = {} as Activity;
+  activity = input.required<Activity>();
 }
