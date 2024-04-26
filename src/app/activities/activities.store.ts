@@ -48,7 +48,7 @@ export const ActivitiesStore = signalStore(
           tap(activities => {
               activities[0].favorite = true;
               patchState(store, { activities })
-            }),
+            })
         )
       )
     }
