@@ -29,7 +29,7 @@ export class ActivitiesListComponent {
   loadActivities() {
     // random number of activities between 2 and 5
     const count = Math.floor(Math.random() * 4) + 2;
-    this.store.loadActivities();
+    this.store.loadActivities(count);
 
   }
 }

@@ -42,9 +42,9 @@ export const ActivitiesStore = signalStore(
    withMethods((store) => {
     const activityService = inject(ActivityService);
     return {
-      loadActivities: rxMethod<void>(
+      loadActivities: rxMethod<number>(
         pipe(
-          switchMap(() => activityService.getRandomActivities(Math.floor(Math.random() * 4) + 2)),
+          switchMap((count) => activityService.getRandomActivities(count)),
           tap(activities => {
               activities[0].favorite = true;
               patchState(store, { activities })
