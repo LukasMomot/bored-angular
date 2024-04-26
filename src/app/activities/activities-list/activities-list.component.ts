@@ -4,6 +4,7 @@ import { Activity } from '../activity';
 import { ActivityCardComponent } from "../activity-card/activity-card.component";
 import { ActivityService } from '../activity.service';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { ActivitiesStore } from '../activities.store';
 
 @Component({
   selector: 'app-activities-list',
@@ -20,42 +21,16 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 export class ActivitiesListComponent {
   activityService = inject(ActivityService);
   private destroyRef = inject(DestroyRef);
+  private store = inject(ActivitiesStore);
 
-  activities = signal<Activity[]>(
-    [
-      {
-        activity: 'Learn Angular',
-        type: 'education',
-        participants: 1,
-        price: 0,
-        link: 'https://angular.io/',
-        accessibility: 0,
-        favorite: true,
-        key: '1',
-      },
-      {
-        activity: 'Whisky tasting',
-        type: 'relaxation',
-        participants: 2,
-        price: 0.5,
-        link: 'https://www.whisky.com/',
-        accessibility: 0.1,
-        key: '2',
-      }
-    ]);
-
-  activityCount = computed(() => this.activities().length);
+  activities = this.store.activities;
+  activityCount = this.store.activityCount;
 
   loadActivities() {
     // random number of activities between 2 and 5
     const count = Math.floor(Math.random() * 4) + 2;
+    this.store.loadActivities();
 
-    this.activityService.getRandomActivities(count)
-      .pipe(takeUntilDestroyed(this.destroyRef))
-      .subscribe(activities => {
-        activities[0].favorite = true;
-        this.activities.set(activities);
-      });
   }
 }
 
