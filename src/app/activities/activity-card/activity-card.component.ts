@@ -6,7 +6,6 @@ import { SupriseTextComponent } from "../suprise-text/suprise-text.component";
 
 @Component({
     selector: 'app-activity-card',
-    standalone: true,
     templateUrl: './activity-card.component.html',
     styleUrl: './activity-card.component.css',
     changeDetection: ChangeDetectionStrategy.OnPush,

@@ -6,15 +6,14 @@ import { ActivityService } from '../activity.service';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 @Component({
-  selector: 'app-activities-list',
-  standalone: true,
-  templateUrl: './activities-list.component.html',
-  styleUrl: './activities-list.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [
-    CommonModule,
-    ActivityCardComponent
-  ]
+    selector: 'app-activities-list',
+    templateUrl: './activities-list.component.html',
+    styleUrl: './activities-list.component.css',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [
+        CommonModule,
+        ActivityCardComponent
+    ]
 })
 
 export class ActivitiesListComponent {
